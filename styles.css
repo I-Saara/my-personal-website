@@ -3,15 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Use a modern Google font */
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Background image with gradient overlay */
+/* Background with pastel colors */
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff; /* White text to contrast against the dark background */
+    background-color: #f7f8fa; /* Soft light gray for a clean look */
+    color: #333; /* Dark gray for text */
     font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
 }
 
 /* Navigation bar styling */
@@ -20,11 +20,12 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: #fff; /* White for a minimalist feel */
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     z-index: 100;
 }
 
@@ -35,37 +36,41 @@ nav ul {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #9d5757; /* Muted pastel color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #f39c12; /* A nice highlight color */
+    color: #e27d60; /* Softer highlight on hover */
 }
 
 /* Main content area styling */
-section {
-    padding: 100px 20px; /* Add padding to account for fixed navbar */
+section#intro {
+    padding: 120px 20px; /* Add padding to account for the fixed navbar */
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #e27d60; /* A soft pastel headline */
 }
 
 p {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #555; /* A medium gray for easy readability */
 }
 
 /* Button styling for the resume link */
 .resume-link {
+    display: inline-block;
+    margin-top: 20px;
     padding: 10px 30px;
-    background-color: #f39c12;
+    background-color: #e27d60; /* Soft pastel color */
     color: #fff;
     border-radius: 5px;
     text-decoration: none;
@@ -74,33 +79,30 @@ p {
 }
 
 .resume-link:hover {
-    background-color: #e67e22;
-    transform: scale(1.05); /* Slight scale effect on hover */
+    background-color: #c06c55; /* Slightly darker shade for hover */
+    transform: scale(1.05);
 }
 
 /* Footer styling */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
+    background-color: #f0f0f0; /* Light gray footer */
+    color: #333;
+    margin-top: 50px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
+    section#intro {
+        padding: 100px 15px;
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
