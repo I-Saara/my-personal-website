@@ -1,49 +1,106 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset basic styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Use a modern Google font */
 }
 
-header {
-    background: #333;
-    color: white;
-    padding: 10px 0;
+/* Background image with gradient overlay */
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* White text to contrast against the dark background */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation bar styling */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: flex;
+    gap: 20px;
 }
 
 nav ul li a {
-    color: blue; 
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
-}
-
-.resume-link {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.resume-link:hover {
-    background-color: #2980b9;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #f39c12; /* A nice highlight color */
+}
+
+/* Main content area styling */
+section {
+    padding: 100px 20px; /* Add padding to account for fixed navbar */
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Button styling for the resume link */
+.resume-link {
+    padding: 10px 30px;
+    background-color: #f39c12;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.resume-link:hover {
+    background-color: #e67e22;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
 }
