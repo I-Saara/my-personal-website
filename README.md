@@ -19,3 +19,4 @@ This portfolio website is designed with a clean, minimalist style focusing on re
 5. **Simple Navigation:** A sticky navbar with easy links to the main sections allows for effortless browsing.
 
 
+
